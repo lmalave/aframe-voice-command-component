@@ -3,7 +3,7 @@
 
 A voice command component for [A-Frame](https://aframe.io).
 
-![](https://storage.googleapis.com/aframe-voice-commands.appspot.com/images/show_hide_menu.png)
+![](https://lmalave.github.io/aframe-voice-command-component/examples/images/show_hide_menu.png)
 
 The `aframe-voice-command-component` components provide voice commands that you can easily integrate into an aframe scene. 
 
@@ -74,7 +74,15 @@ Note that multiple instances of the `voice-command` component are allowed on the
 
 This implementation is currently only compatible with the Google Chrome browser since it is based on that browser's Speech Recognition API. 
 
-This implementation has been tested on Chrome for desktop (Mac OS) and Android, but should also be compatible with the latest Chrome browser on any platform (Windows Desktop, iOS).
+The following are verified compatibility tests and results:
+
+| Browser | OS | Works? |
+| -------- | ----------- | ------------- |
+| Chrome 55 | Mac OS 10.12  | Yes |
+| Chrome 55  | Android 6.0.1   | Yes |
+| Chrome 55  | iOS 10 | No |
+
+Other versions of Chrome should also work, such as Chrome on Windows 10.
 
 #### npm
 
@@ -128,3 +136,18 @@ Then execute: `npm start`
 
 The application will then be running on http://localhost:8000 and your default browser should automatically open on this page
 
+## Troubleshooting
+
+#### Voice commands not working
+If the voice commands are not working, first verify that the page has access to the 
+microphone. 
+
+When you first load a page with voice commands in the browser, you should see the following prompt
+to grant access to the microphone:
+
+![](https://lmalave.github.io/aframe-voice-command-component/examples/images/chrome_microphone_access_request.png)
+
+
+If the page has already been granted access to the microphone, you should see a red dot on the tab and a camera icon in the URL bar, as shown below:
+
+![](https://lmalave.github.io/aframe-voice-command-component/examples/images/chrome_microphone_status.png)
