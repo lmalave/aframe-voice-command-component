@@ -1,5 +1,5 @@
 
-## Overview
+## aframe-voice-command-component
 
 A voice command component for [A-Frame](https://aframe.io).
 
@@ -95,7 +95,7 @@ require('aframe-voice-command-component');
 
 Demos are available publicly at:
 
-[https://storage.googleapis.com/aframe-voice-commands.appspot.com/examples/index.html](https://storage.googleapis.com/aframe-voice-commands.appspot.com/examples/index.html)
+[https://lmalave.github.io/aframe-voice-command-component/examples/index.html](https://lmalave.github.io/aframe-voice-command-component/examples/index.html)
  
 #### Image gallery demo
 
